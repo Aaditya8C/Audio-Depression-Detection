@@ -1,0 +1,126 @@
+# ─────────────────────────────────────────────
+#  MindWave — Audio+Face Depression Detection
+#  Root .gitignore  (Python backend + Next.js frontend)
+# ─────────────────────────────────────────────
+
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+sdist/
+develop-eggs/
+.eggs/
+lib/
+lib64/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# ── Jupyter Notebooks ─────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── ML / Model artefacts ──────────────────────
+# Keep .h5 and .pth model files out of version control
+# (they are large binaries — use Git LFS or cloud storage)
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.onnx
+*.pb
+*.tflite
+*.pkl
+*.pickle
+
+# ── Temp / upload files ───────────────────────
+tmp/
+temp/
+uploads/
+*.wav
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+*.mp3
+
+# ── Environment & secrets ─────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+
+# ── Logs ──────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── OS files ──────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+
+# ── Next.js (frontend/) ───────────────────────
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/node_modules/
+frontend/.vercel/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+frontend/coverage/
+
+# ── Node (misc) ───────────────────────────────
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ── TypeScript ────────────────────────────────
+*.tsbuildinfo
+
+# ── Testing ───────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Misc ──────────────────────────────────────
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
